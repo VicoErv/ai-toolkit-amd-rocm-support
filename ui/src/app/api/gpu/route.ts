@@ -222,7 +222,7 @@ async function getAMDGpuStats(isWindows: boolean) {
         memory: amdParseInt(gpu_data["clock"]["mem_0"]["clk"]["value"]),
       },
       fan: {
-        speed: amdParseFloat(gpu_data["fan"]["usage"]["value"]),
+        speed: 0,
       }
     };
   });
